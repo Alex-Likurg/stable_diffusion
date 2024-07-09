@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stable Diffusion</title>  
+    <link rel="stylesheet" href="/index.css">
+    <style>
+        
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px; 
+            height: 300px;
+            border: 1px solid #000;
+            pointer-events: auto;
+        }
+        .image-gallery img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .image-gallery img:nth-child(n+7) {
+            display: none;
+        }        
+    </style>
+</head>
+
+<body>
+
+    <h1>Stable Diffusion Project</h1>
+    <p> Алексей Космачев сделал свой первый сайт.
+        При помощи данной страницы можно получать изображения от Stable Diffusion.
+        Для этого необходимо ввести описание желаемого изображения на английском языке.
+        Учтите также, что разработчики не поощряют использование имен собственных в описании.
+        Удачных творческих поисков! </p>
+
+    <div id="messages">
+
+    </div>
+
+    <form onsubmit="submitForm(event)" id="form">
+        <input type="text" id="input" placeholder="Введите запрос" />
+    </form>
+
+    <div id="imageGallery" class="image-gallery">
+    </div> <!--блок на отображение сохраненного img-->
+
+    <script src="/client.js"></script>
+</body>
+
+</html>

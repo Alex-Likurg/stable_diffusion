@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* Импортирует шрифт 'Inter' с различными весами (400 и 700) с Google Fonts для использования на веб-странице */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Устанавливает нулевые значения для отступов (margin) и полей (padding) для всех элементов на странице, что позволяет избежать стандартных отступов и полей браузера */
+
+body {
+    background: #343541;
+    color: #ECECF1;
+    font-family: 'Inter', sans-serif;
+}
+/* Задает стили для тега <body>:
+   - Фоновый цвет (#343541)
+   - Цвет текста (#ECECF1)
+   - Шрифт 'Inter' или, если он недоступен, любой доступный шрифт без засечек (sans-serif) */
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+/* Задает стили для заголовка <h1>:
+   - Центрирование текста (text-align: center)
+   - Размер шрифта 50 пикселей (font-size: 50px)
+   - Верхний отступ 100 пикселей (margin-top: 100px) */
+
+body>p {
+    width: 600px;
+    margin: 50px auto;
+    line-height: 170%;
+    text-align: center;
+    color: #b5b5bc;
+}
+/* Задает стили для всех параграфов (<p>) внутри <body>:
+   - Ширина 600 пикселей (width: 600px)
+   - Отступы: по вертикали 50 пикселей сверху и снизу (margin: 50px), по горизонтали авто (auto), что центрирует элемент по горизонтали
+   - Межстрочный интервал 170% (line-height: 170%)
+   - Центрирование текста (text-align: center)
+   - Цвет текста (#b5b5bc) */
+
+#messages {
+    width: 700px;
+    margin: 0 auto;
+    max-height: 600px;
+    overflow-y: auto;
+    margin-bottom: 220px;
+    text-align: center;
+}
+/* Задает стили для элемента с id 'messages':
+   - Ширина 700 пикселей (width: 700px)
+   - Отступы: по вертикали 0 пикселей, по горизонтали авто (auto), что центрирует элемент по горизонтали
+   - Максимальная высота 600 пикселей (max-height: 600px)
+   - Вертикальная прокрутка при необходимости (overflow-y: auto)
+   - Нижний отступ 220 пикселей (margin-bottom: 220px) */
+
+#messages::-webkit-scrollbar {
+    width: 5px
+}
+/* Устанавливает ширину полосы прокрутки в 5 пикселей для элемента 'messages' в веб-кит браузерах (например, Chrome, Safari) */
+
+#messages::-webkit-scrollbar-track {
+    background: #575a6c;
+}
+/* Задает цвет фона дорожки полосы прокрутки (#575a6c) для элемента 'messages' в веб-кит браузерах */
+
+#messages::-webkit-scrollbar-thumb {
+    background: #17181e
+}
+/* Задает цвет движка полосы прокрутки (#17181e) для элемента 'messages' в веб-кит браузерах */
+
+#messages::-webkit-scrollbar-thumb:hover {
+    background: #d26565
+}
+/* Задает цвет движка полосы прокрутки при наведении курсора мыши (#d26565) для элемента 'messages' в веб-кит браузерах */
+
+.mess-user {
+    background: #434654;
+    padding: 20px 25px;
+}
+/* Задает стили для элементов с классом 'mess-user':
+   - Фоновый цвет (#434654)
+   - Внутренние отступы: 20 пикселей сверху и снизу, 25 пикселей слева и справа (padding: 20px 25px) */
+
+.mess-chat img {
+    background: #2b2d37;
+    padding: 20px 25px;
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+    max-height: 300px;
+    
+}
+/* Задает стили для изображений (<img>) внутри элементов с классом 'mess-chat':
+   - Фоновый цвет (#2b2d37)
+   - Внутренние отступы: 20 пикселей сверху и снизу, 25 пикселей слева и справа (padding: 20px 25px)
+   - Максимальная ширина 100% (max-width: 100%) чтобы изображение не выходило за границы родительского элемента
+   - Автоматическая высота (height: auto) чтобы сохранять пропорции изображения
+   - Максимальная высота 300 пикселей (max-height: 300px) чтобы ограничить высоту изображения */
+
+form {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+/* Задает стили для тега <form>:
+   - Фиксированное позиционирование (position: fixed)
+   - Размещение внизу на 100 пикселей от нижнего края окна (bottom: 100px)
+   - Ширина 100% (width: 100%)
+   - Центрирование текста (text-align: center) */
+
+form input {
+    background: #40414F;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid transparent;
+    color: #ECECF1;
+    outline: none;
+    width: 500px;
+}
+/* Задает стили для полей ввода (<input>) внутри формы:
+   - Фоновый цвет (#40414F)
+   - Скругленные углы (border-radius: 5px)
+   - Внутренние отступы: 15 пикселей сверху и снизу, 20 пикселей слева и справа (padding: 15px 20px)
+   - Шрифт 'Inter' или любой доступный шрифт без засечек (font-family: 'Inter', sans-serif)
+   - Прозрачная рамка (border: 1px solid transparent)
+   - Цвет текста (#ECECF1)
+   - Отсутствие обводки при фокусе (outline: none)
+   - Ширина 500 пикселей (width: 500px) */
+
+form input:focus {
+    border-color: #d26565;
+}
+/* Задает стили для полей ввода при фокусе (input:focus):
+   - Цвет рамки #d26565 (border-color: #d26565) */
+
+form input::-webkit-input-placeholder {
+    color: #6c6e83;
+}
+/* Задает стили для текста placeholder внутри полей ввода в веб-кит браузерах:
+   - Цвет текста #6c6e83 (color: #6c6e83) */
