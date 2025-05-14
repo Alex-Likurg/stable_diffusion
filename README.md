@@ -65,7 +65,7 @@ Use the dialog box to enter a text prompt and generate an image.
 
 ### Screenshot of the running site:
 
-![screenshot](stable.png)
+![screenshot](screenshot.png.png)
 
 ---
 
